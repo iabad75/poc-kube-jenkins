@@ -8,8 +8,12 @@ kubernertes Jenkins Deployment
 - jenkins-values.yaml: jenkins chart configuration
 
 # Install helm chart
+```
 chart=jenkinsci/jenkins
 helm install jenkins -n jenkins -f jenkins-values.yaml $chart
+```
 
 # check jenkins controller pod created for the heml chart
+```
 kubectl logs jenkins-0 -c init
+```
